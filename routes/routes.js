@@ -1,7 +1,7 @@
 const app = require('express').Router();
 const randomID = require('uuid');
 const { writeFile } = require('fs').promises;
-let db = require('../db/db.json');
+let db = require('./db/db.json');
 
 app.get('/notes', (req, res) => {
     try {
