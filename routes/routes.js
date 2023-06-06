@@ -5,6 +5,7 @@ let db = require('../db/db.json');
 
 app.get('/notes', (req, res) => {
     try {
+        console.log(db)
         res.json(db);
     } catch (error) {
         res.status(500).json({ error: 'An error has occured' })
@@ -19,7 +20,7 @@ app.post('/notes', (req, res) => {
             id: randomID,
         };
         db.push(note);
-        writeFile('./db/db.json', JSON.stringify(db))
+        writeFile('../db/db.json', JSON.stringify(db))
         .then(() => {
             res.json(db);
         })
