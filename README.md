@@ -7,9 +7,3 @@ This application helps the user create notes so they do not forget to do somethi
 - Express
 - Node.js
 - Heroku
-
-## Video of Application
-
-Below is a video that demonstrates how to use the application.
-
-[Demo Video](assets/Logo-Generator-Example.webm)
